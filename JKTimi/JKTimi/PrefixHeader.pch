@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  JKTimi
+//
+//  Created by 宋旭 on 16/5/10.
+//  Copyright © 2016年 sky. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "JKModelManager.h"
+#import "JKAccountModel.h"
+#import "JKAccount.h"
+#import "Account+CoreDataProperties.h"
+#import "SVProgressHUD.h"
+
+#endif /* PrefixHeader_pch */
+
+//公司常用代码-便于调试
+#ifdef DEBUG  //调试阶段
+#define JKLog(...)  NSLog(__VA_ARGS__)
+#else //发布阶段
+#define JKLog(...)
+#endif
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SP_W(width) WIDTH*(width/320.0)
+#define SP_H(height) HEIGHT*(height/480.0)
+#define NAVIGATIONBAR_HEIGHT 64
+
+#define RGBCOLORVA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+static const int kCUSTOM_KEYBOARD_HEIGHT = 260;  //自定义键盘高度
+
+///** 数据同步状态码 */
+//typedef NS_ENUM(NSInteger, JKDataSyncStatusCode) {
+//    /** 服务器端待添加 */
+//    kJKDataSyncStatusCodeTypeAdd = 1,
+//    /** 服务器端待修改 */
+//    kJKDataSyncStatusCodeTypeModify = 2,
+//    /** 服务器端待删除 */
+//    kJKDataSyncStatusCodeTypeDelete = 4,
+//    /** 服务器端已处理 */
+//    kJKDataSyncStatusCodeTypeDone = 8
+//};
+//
+//typedef NS_ENUM(NSInteger, JKDataBaseURL) {
+//    /** 增加或修改账目 */
+//    kJKDataBaseURL_AddOrModifyAccount = 1,
+//    /** 删除账目 */
+//    kJKDataBaseURL_DeleteAccount = 2
+//};
+
+/** 新浪SAE服务器URL */
+//#define JKSERVERURL_REGISTERURL [NSURL URLWithString:@"http://2.jktimiserver.applinzi.com/register.php"]
+//#define JKSERVERURL_LOGINURL [NSURL URLWithString:@"http://2.jktimiserver.applinzi.com/login.php"]
+//
+//#define JKDATABASEURL_DELETEACCOUNT [NSURL URLWithString:@"http://2.jktimiserver.applinzi.com/deleteaccount.php"]
+//#define JKDATABASEURL_MODIFYACCOUNT [NSURL URLWithString:@"http://2.jktimiserver.applinzi.com/editaccount_server.php"]
+//#define JKDATABASEURL_ADDACCOUNT [NSURL URLWithString:@"http://2.jktimiserver.applinzi.com/addAccount.php"]
+
+/** 本地服务器URL */
+#define JKSERVERURL_REGISTERURL [NSURL URLWithString:@"http://localhost/MyApp/JKTimi/register.php"]
+#define JKSERVERURL_LOGINURL [NSURL URLWithString:@"http://localhost/MyApp/JKTimi/login.php"]
+
+#define JKDATABASEURL_DELETEACCOUNT [NSURL URLWithString:@"http://localhost/MyApp/JKTimi/deleteaccount.php"]
+#define JKDATABASEURL_MODIFYACCOUNT [NSURL URLWithString:@"http://localhost/MyApp/JKTimi/editaccount_server.php"]
+#define JKDATABASEURL_ADDACCOUNT [NSURL URLWithString:@"http://localhost/MyApp/JKTimi/addAccount.php"]

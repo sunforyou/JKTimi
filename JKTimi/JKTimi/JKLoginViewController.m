@@ -1,0 +1,263 @@
+//
+//  JKLoginViewController.m
+//  JKTimi
+//
+//  Created by 宋旭 on 16/6/7.
+//  Copyright © 2016年 sky. All rights reserved.
+//
+
+#import "JKLoginViewController.h"
+#import "JKRegisterViewController.h"
+#import "SVProgressHUD.h"
+
+@interface JKLoginViewController()
+
+/** 登陆界面基本控件 */
+@property (strong, nonatomic) UIView *backgroundBoard;
+@property (strong, nonatomic) UITextField *inputAccount;
+@property (strong, nonatomic) UITextField *inputPassword;
+@property (strong, nonatomic) UILabel *accountLabel;
+@property (strong, nonatomic) UILabel *passwordLabel;
+@property (strong, nonatomic) UIButton *confirm;
+
+@end
+
+@implementation JKLoginViewController
+
+#pragma mark - Getters
+- (UIView *)backgroundBoard {
+    if (!_backgroundBoard) {
+        _backgroundBoard = [[UIView alloc] init];
+        [_backgroundBoard setBackgroundColor:[UIColor lightGrayColor]];
+        [_backgroundBoard.layer setCornerRadius:15];
+        [_backgroundBoard setUserInteractionEnabled:YES];
+        [_backgroundBoard setTranslatesAutoresizingMaskIntoConstraints:NO];
+    }
+    return _backgroundBoard;
+}
+
+- (UITextField *)inputAccount {
+    if (!_inputAccount) {
+        _inputAccount = [[UITextField alloc] init];
+        _inputAccount.placeholder = @"请输入用户名";
+        [_inputAccount setTranslatesAutoresizingMaskIntoConstraints:NO];
+    }
+    return _inputAccount;
+}
+
+- (UITextField *)inputPassword {
+    if (!_inputPassword) {
+        _inputPassword = [[UITextField alloc] init];
+        _inputPassword.placeholder = @"请输入密码";
+        [_inputPassword setTranslatesAutoresizingMaskIntoConstraints:NO];
+    }
+    return _inputPassword;
+}
+
+- (UILabel *)accountLabel {
+    if (!_accountLabel) {
+        _accountLabel = [[UILabel alloc] init];
+        _accountLabel.text = @"账号:";
+        _accountLabel.contentMode = NSLayoutFormatAlignAllRight;
+        [_accountLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+    }
+    return _accountLabel;
+}
+
+- (UILabel *)passwordLabel {
+    if (!_passwordLabel) {
+        _passwordLabel = [[UILabel alloc] init];
+        _passwordLabel.text = @"密码:";
+        _passwordLabel.contentMode = NSLayoutFormatAlignAllRight;
+        [_passwordLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+    }
+    return _passwordLabel;
+}
+
+- (UIButton *)confirm {
+    if (!_confirm) {
+        _confirm = [[UIButton alloc] init];
+        [_confirm setTitle:@"登陆" forState:UIControlStateNormal];
+        [_confirm setTintColor:[UIColor whiteColor]];
+        [_confirm setBackgroundColor:[UIColor blueColor]];
+        [_confirm.layer setCornerRadius:12];
+        [_confirm setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [_confirm addTarget:self action:@selector(confirmButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _confirm;
+}
+
++ (JKLoginViewController *)generateLoginVC {
+    JKLoginViewController *LoginVC = [[JKLoginViewController alloc] init];
+    [LoginVC.view setBackgroundColor:[UIColor clearColor]];
+    [LoginVC layoutRegisterView];
+    
+    return LoginVC;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStyleDone target:self action:@selector(didSegueToRegisterController)];
+    
+    [self.navigationItem setRightBarButtonItem:rightButton];
+    self.navigationItem.leftBarButtonItem.title = @"登陆";
+    self.navigationItem.title = @"登陆";
+}
+
+#pragma mark - Setup RegisterView
+/** 注册界面布局 */
+- (void)layoutRegisterView {
+    //display
+    [self.backgroundBoard addSubview:self.confirm];
+    [self.backgroundBoard addSubview:self.accountLabel];
+    [self.backgroundBoard addSubview:self.passwordLabel];
+    [self.backgroundBoard addSubview:self.inputAccount];
+    [self.backgroundBoard addSubview:self.inputPassword];
+    [self.view addSubview:self.backgroundBoard];
+    
+    //Layout注册界面所有控件
+    [self.backgroundBoard addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[accountLabel(60)]-[inputAccount(200)]-|" options:NSLayoutFormatAlignAllBottom | NSLayoutFormatAlignAllTop metrics:nil views:@{@"accountLabel":_accountLabel,@"inputAccount":_inputAccount}]];
+    
+    [self.backgroundBoard addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[passwordLabel(60)]-[inputPassword(200)]-|" options:NSLayoutFormatAlignAllBottom | NSLayoutFormatAlignAllTop metrics:nil views:@{@"passwordLabel":_passwordLabel,@"inputPassword":_inputPassword}]];
+    
+    [self.backgroundBoard addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[confirm]-|" options:NSLayoutFormatAlignAllBottom | NSLayoutFormatAlignAllTop metrics:nil views:@{@"confirm":_confirm}]];
+    
+    [self.backgroundBoard addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[accountLabel(35)]-5-[passwordLabel(35)]-5-[confirm(35)]-|" options:0 metrics:nil views:@{@"accountLabel":_accountLabel,@"passwordLabel":_passwordLabel,@"confirm":_confirm}]];
+    
+    //layout注册界面画板
+    
+    NSLayoutConstraint *bgbConstraintX = [NSLayoutConstraint constraintWithItem:_backgroundBoard
+                                                                      attribute:NSLayoutAttributeCenterX
+                                                                      relatedBy:0
+                                                                         toItem:self.view
+                                                                      attribute:NSLayoutAttributeCenterX
+                                                                     multiplier:1.0
+                                                                       constant:0.0];
+    
+    [self.view addConstraint:bgbConstraintX];
+    
+    NSLayoutConstraint *bgbConstraintY = [NSLayoutConstraint constraintWithItem:_backgroundBoard
+                                                                      attribute:NSLayoutAttributeCenterY
+                                                                      relatedBy:0
+                                                                         toItem:self.view
+                                                                      attribute:NSLayoutAttributeCenterY
+                                                                     multiplier:0.7
+                                                                       constant:0.0];
+    
+    [self.view addConstraint:bgbConstraintY];
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[backgroundBoard]" options:0 metrics:nil views:@{@"backgroundBoard":_backgroundBoard}]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[backgroundBoard]" options:0 metrics:nil views:@{@"backgroundBoard":_backgroundBoard}]];
+}
+
+#pragma mark - Button Clicked Handler
+/** 确认登录 */
+- (void)confirmButtonClicked:(id)sender {
+    
+    [SVProgressHUD show];
+    //0.输入不能为空
+    if (self.inputAccount.text.length == 0) {
+        [SVProgressHUD showErrorWithStatus:self.inputAccount.placeholder];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+        return;
+    }
+    
+    if (self.inputPassword.text.length == 0) {
+        [SVProgressHUD showErrorWithStatus:self.inputPassword.placeholder];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+        return;
+    }
+    [self startLoginRequest];
+}
+
+- (void)startLoginRequest {
+    
+    //创建请求对象
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:JKSERVERURL_LOGINURL];
+    
+    //请求方法
+    request.HTTPMethod = @"POST";
+    
+    //携带参数设置
+    NSString *param = [NSString stringWithFormat:@"username=%@&password=%@",self.inputAccount.text,self.inputPassword.text];
+    
+    JKLog(@"%@",param);
+    
+    //设置请求体
+    request.HTTPBody = [param dataUsingEncoding:NSUTF8StringEncoding];
+    [request setValue:@"iOS" forHTTPHeaderField:@"User-Agent"];
+    
+    //异步发送请求
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"请求失败");
+        } else {
+            //解析服务器返回数据
+            NSString *res = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            //弹窗提示操作结果
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if ([res containsString:@"Success"]) {
+                    [SVProgressHUD showSuccessWithStatus:res];
+                    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                    [self.navigationController popViewControllerAnimated:YES];
+                } else {
+                    [SVProgressHUD showErrorWithStatus:res];
+                    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                }
+            });
+            JKLog(@"%@---%@",res,[NSThread currentThread]);
+            /** 查看userdefault中有无需要上传的账目,若存在则进行上传。
+             *  若再次上传失败，上帝啊，暂时管不了那么多了，下次升级优化的时候再说吧 */
+            if ([[NSUserDefaults standardUserDefaults] objectForKey:@"AccountNeedsToHandle"]) {
+                NSArray *array = [[NSUserDefaults standardUserDefaults] objectForKey:@"AccountNeedsToHandle"];
+                [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    
+                    NSString *oldParams = [(NSDictionary *)obj valueForKey:@"Params"];
+                    NSURL *oldURL = [(NSDictionary *)obj valueForKey:@"URL"];
+                    [self startPostRequestWithParams:oldParams toURL:oldURL];
+                }];
+            };
+        }
+    }];
+    [task resume];
+}
+
+- (void)startPostRequestWithParams:(NSString *)param toURL:(NSURL *)URL {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"POST";
+    request.HTTPBody = [param dataUsingEncoding:NSUTF8StringEncoding];
+    [request setValue:@"iOS" forHTTPHeaderField:@"User-Agent"];
+    JKLog(@"%@",param);
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"请求失败");
+        } else {
+            //解析服务器返回数据
+            NSString *res = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            //弹窗提示操作结果
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if ([res containsString:@"Success"]) {
+                    [SVProgressHUD showSuccessWithStatus:res];
+                    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                } else {
+                    [SVProgressHUD showErrorWithStatus:res];
+                    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                }
+            });
+            JKLog(@"%@---%@",res,[NSThread currentThread]);
+        }
+    }];
+    [task resume];
+}
+
+- (void)didSegueToRegisterController {
+    JKRegisterViewController *registerVC = [JKRegisterViewController generateRegisterVC];
+    [self.navigationController pushViewController:registerVC animated:YES];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+@end

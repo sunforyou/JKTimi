@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A41C2F201CF1D26A00EE0893 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = A41C2F1F1CF1D26A00EE0893 /* 删除.png */; };
+		A41C2F221CF1D27B00EE0893 /* 编辑.png in Resources */ = {isa = PBXBuildFile; fileRef = A41C2F211CF1D27B00EE0893 /* 编辑.png */; };
+		A42414391CE19E0700B71968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414381CE19E0700B71968 /* main.m */; };
+		A424143C1CE19E0700B71968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A424143B1CE19E0700B71968 /* AppDelegate.m */; };
+		A424143F1CE19E0700B71968 /* JKTimeLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A424143E1CE19E0700B71968 /* JKTimeLineVC.m */; };
+		A42414451CE19E0700B71968 /* JKTimi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A42414431CE19E0700B71968 /* JKTimi.xcdatamodeld */; };
+		A42414471CE19E0700B71968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42414461CE19E0700B71968 /* Assets.xcassets */; };
+		A424144A1CE19E0700B71968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42414481CE19E0700B71968 /* LaunchScreen.storyboard */; };
+		A42414561CE19E5300B71968 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414541CE19E5300B71968 /* Account.m */; };
+		A424145A1CE19F1C00B71968 /* JKTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414591CE19F1C00B71968 /* JKTimeLineView.m */; };
+		A424145F1CE1A7A000B71968 /* addAmountButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A424145E1CE1A7A000B71968 /* addAmountButton.png */; };
+		A42414631CE1B48000B71968 /* JKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414621CE1B48000B71968 /* JKAccount.m */; };
+		A42414661CE1B52300B71968 /* JKAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414651CE1B52300B71968 /* JKAccountModel.m */; };
+		A42414691CE1B9E600B71968 /* JKModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A42414681CE1B9E600B71968 /* JKModelManager.m */; };
+		A42BCBF41D07BC9E0089B1CE /* Account+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BCBF31D07BC9E0089B1CE /* Account+CoreDataProperties.m */; };
+		A43AA01C1CF6CC8E00F53C29 /* JKInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A43AA01B1CF6CC8E00F53C29 /* JKInteractiveTransition.m */; };
+		A44686221D065D7C0078F111 /* JKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44686211D065D7C0078F111 /* JKLoginViewController.m */; };
+		A44686251D065DB60078F111 /* JKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44686241D065DB60078F111 /* JKRegisterViewController.m */; };
+		A446862F1D065E000078F111 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44686281D065E000078F111 /* SVIndefiniteAnimatedView.m */; };
+		A44686301D065E000078F111 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A446862A1D065E000078F111 /* SVProgressHUD.bundle */; };
+		A44686311D065E000078F111 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A446862C1D065E000078F111 /* SVProgressHUD.m */; };
+		A44686321D065E000078F111 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A446862E1D065E000078F111 /* SVRadialGradientLayer.m */; };
+		A48DB5BB1CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A48DB5BA1CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.m */; };
+		A48DB5C01CF493E70093DCF1 /* UIView+ FrameChange.m in Sources */ = {isa = PBXBuildFile; fileRef = A48DB5BC1CF493E70093DCF1 /* UIView+ FrameChange.m */; };
+		A48DB5C11CF493E70093DCF1 /* UIView+anchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A48DB5BF1CF493E70093DCF1 /* UIView+anchorPoint.m */; };
+		A4AF98E91CF5AA9400319982 /* JKNumberKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AF98E71CF5AA9400319982 /* JKNumberKeyboardViewController.m */; };
+		A4AF98EA1CF5AA9400319982 /* JKNumberKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AF98E81CF5AA9400319982 /* JKNumberKeyboardViewController.xib */; };
+		A4D5927D1CF5853E00298360 /* JKParabolaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D5927C1CF5853E00298360 /* JKParabolaAnimation.m */; };
+		A4D592861CF5869300298360 /* JKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D5927F1CF5869300298360 /* JKCollectionViewCell.m */; };
+		A4D592871CF5869300298360 /* JKDragAndDropCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D592811CF5869300298360 /* JKDragAndDropCollectionViewLayout.m */; };
+		A4D592881CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D592831CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.m */; };
+		A4D592891CF5869300298360 /* JKDraggableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D592851CF5869300298360 /* JKDraggableCollectionViewCell.m */; };
+		A4D592901CF5888100298360 /* JKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D5928B1CF5888100298360 /* JKCollectionViewController.m */; };
+		A4D882F81CE3720D00D52641 /* 充值.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882EC1CE3720C00D52641 /* 充值.png */; };
+		A4D882F91CE3720D00D52641 /* 工资.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882ED1CE3720C00D52641 /* 工资.png */; };
+		A4D882FA1CE3720D00D52641 /* 购物.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882EE1CE3720C00D52641 /* 购物.png */; };
+		A4D882FB1CE3720D00D52641 /* 护肤.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882EF1CE3720C00D52641 /* 护肤.png */; };
+		A4D882FC1CE3720D00D52641 /* 就餐.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F01CE3720C00D52641 /* 就餐.png */; };
+		A4D882FD1CE3720D00D52641 /* 丽人.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F11CE3720D00D52641 /* 丽人.png */; };
+		A4D882FE1CE3720D00D52641 /* 零食.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F21CE3720D00D52641 /* 零食.png */; };
+		A4D882FF1CE3720D00D52641 /* 日杂.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F31CE3720D00D52641 /* 日杂.png */; };
+		A4D883001CE3720D00D52641 /* 鞋帽.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F41CE3720D00D52641 /* 鞋帽.png */; };
+		A4D883011CE3720D00D52641 /* 一般.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F51CE3720D00D52641 /* 一般.png */; };
+		A4D883021CE3720D00D52641 /* 娱乐.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F61CE3720D00D52641 /* 娱乐.png */; };
+		A4D883031CE3720D00D52641 /* 住房.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D882F71CE3720D00D52641 /* 住房.png */; };
+		A4D883141CE37AE200D52641 /* 宝贝.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883041CE37AE200D52641 /* 宝贝.png */; };
+		A4D883151CE37AE200D52641 /* 宠物.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883051CE37AE200D52641 /* 宠物.png */; };
+		A4D883161CE37AE200D52641 /* 服装.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883061CE37AE200D52641 /* 服装.png */; };
+		A4D883171CE37AE200D52641 /* 腐败.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883071CE37AE200D52641 /* 腐败.png */; };
+		A4D883181CE37AE200D52641 /* 工作.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883081CE37AE200D52641 /* 工作.png */; };
+		A4D883191CE37AE200D52641 /* 家庭.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883091CE37AE200D52641 /* 家庭.png */; };
+		A4D8831A1CE37AE200D52641 /* 酒水.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830A1CE37AE200D52641 /* 酒水.png */; };
+		A4D8831B1CE37AE200D52641 /* 日用品.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830B1CE37AE200D52641 /* 日用品.png */; };
+		A4D8831C1CE37AE200D52641 /* 数码.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830C1CE37AE200D52641 /* 数码.png */; };
+		A4D8831D1CE37AE200D52641 /* 投资.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830D1CE37AE200D52641 /* 投资.png */; };
+		A4D8831E1CE37AE200D52641 /* 香烟.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830E1CE37AE200D52641 /* 香烟.png */; };
+		A4D8831F1CE37AE200D52641 /* 信用卡.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D8830F1CE37AE200D52641 /* 信用卡.png */; };
+		A4D883201CE37AE200D52641 /* 学习.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883101CE37AE200D52641 /* 学习.png */; };
+		A4D883211CE37AE200D52641 /* 医疗.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883111CE37AE200D52641 /* 医疗.png */; };
+		A4D883221CE37AE200D52641 /* 运动.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883121CE37AE200D52641 /* 运动.png */; };
+		A4D883231CE37AE200D52641 /* 转账.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D883131CE37AE200D52641 /* 转账.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A41C2F1F1CF1D26A00EE0893 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		A41C2F211CF1D27B00EE0893 /* 编辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编辑.png"; sourceTree = "<group>"; };
+		A42414341CE19E0700B71968 /* JKTimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKTimi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42414381CE19E0700B71968 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A424143A1CE19E0700B71968 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A424143B1CE19E0700B71968 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A424143D1CE19E0700B71968 /* JKTimeLineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTimeLineVC.h; sourceTree = "<group>"; };
+		A424143E1CE19E0700B71968 /* JKTimeLineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTimeLineVC.m; sourceTree = "<group>"; };
+		A42414441CE19E0700B71968 /* JKTimi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JKTimi.xcdatamodel; sourceTree = "<group>"; };
+		A42414461CE19E0700B71968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42414491CE19E0700B71968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A424144B1CE19E0700B71968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42414531CE19E5300B71968 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		A42414541CE19E5300B71968 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		A42414581CE19F1C00B71968 /* JKTimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTimeLineView.h; sourceTree = SOURCE_ROOT; };
+		A42414591CE19F1C00B71968 /* JKTimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTimeLineView.m; sourceTree = SOURCE_ROOT; };
+		A424145D1CE1A12F00B71968 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A424145E1CE1A7A000B71968 /* addAmountButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addAmountButton.png; path = ../addAmountButton.png; sourceTree = "<group>"; };
+		A42414611CE1B48000B71968 /* JKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAccount.h; sourceTree = "<group>"; };
+		A42414621CE1B48000B71968 /* JKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAccount.m; sourceTree = "<group>"; };
+		A42414641CE1B52300B71968 /* JKAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAccountModel.h; sourceTree = "<group>"; };
+		A42414651CE1B52300B71968 /* JKAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAccountModel.m; sourceTree = "<group>"; };
+		A42414671CE1B9E600B71968 /* JKModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKModelManager.h; sourceTree = "<group>"; };
+		A42414681CE1B9E600B71968 /* JKModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKModelManager.m; sourceTree = "<group>"; };
+		A42BCBF21D07BC9E0089B1CE /* Account+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A42BCBF31D07BC9E0089B1CE /* Account+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A43AA01A1CF6CC8E00F53C29 /* JKInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInteractiveTransition.h; sourceTree = "<group>"; };
+		A43AA01B1CF6CC8E00F53C29 /* JKInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInteractiveTransition.m; sourceTree = "<group>"; };
+		A44686201D065D7C0078F111 /* JKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLoginViewController.h; sourceTree = "<group>"; };
+		A44686211D065D7C0078F111 /* JKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLoginViewController.m; sourceTree = "<group>"; };
+		A44686231D065DB60078F111 /* JKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRegisterViewController.h; sourceTree = "<group>"; };
+		A44686241D065DB60078F111 /* JKRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRegisterViewController.m; sourceTree = "<group>"; };
+		A44686271D065E000078F111 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		A44686281D065E000078F111 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A44686291D065E000078F111 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		A446862A1D065E000078F111 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A446862B1D065E000078F111 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A446862C1D065E000078F111 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A446862D1D065E000078F111 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		A446862E1D065E000078F111 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		A48DB5B91CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPushAndPopAnimationTransition.h; sourceTree = "<group>"; };
+		A48DB5BA1CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPushAndPopAnimationTransition.m; sourceTree = "<group>"; };
+		A48DB5BC1CF493E70093DCF1 /* UIView+ FrameChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ FrameChange.m"; sourceTree = "<group>"; };
+		A48DB5BD1CF493E70093DCF1 /* UIView+FrameChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameChange.h"; sourceTree = "<group>"; };
+		A48DB5BE1CF493E70093DCF1 /* UIView+anchorPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+anchorPoint.h"; sourceTree = "<group>"; };
+		A48DB5BF1CF493E70093DCF1 /* UIView+anchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+anchorPoint.m"; sourceTree = "<group>"; };
+		A4AF98E51CF5AA9400319982 /* JKDragAndDropCollectionViewLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKDragAndDropCollectionViewLayoutConstants.h; path = JKTimi/JKDragAndDropCollectionViewLayoutConstants.h; sourceTree = SOURCE_ROOT; };
+		A4AF98E61CF5AA9400319982 /* JKNumberKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKNumberKeyboardViewController.h; path = JKTimi/JKNumberKeyboardViewController.h; sourceTree = SOURCE_ROOT; };
+		A4AF98E71CF5AA9400319982 /* JKNumberKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKNumberKeyboardViewController.m; path = JKTimi/JKNumberKeyboardViewController.m; sourceTree = SOURCE_ROOT; };
+		A4AF98E81CF5AA9400319982 /* JKNumberKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JKNumberKeyboardViewController.xib; path = JKTimi/JKNumberKeyboardViewController.xib; sourceTree = SOURCE_ROOT; };
+		A4D5927B1CF5853E00298360 /* JKParabolaAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKParabolaAnimation.h; sourceTree = "<group>"; };
+		A4D5927C1CF5853E00298360 /* JKParabolaAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKParabolaAnimation.m; sourceTree = "<group>"; };
+		A4D5927E1CF5869300298360 /* JKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKCollectionViewCell.h; path = JKTimi/JKCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		A4D5927F1CF5869300298360 /* JKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKCollectionViewCell.m; path = JKTimi/JKCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		A4D592801CF5869300298360 /* JKDragAndDropCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKDragAndDropCollectionViewLayout.h; path = JKTimi/JKDragAndDropCollectionViewLayout.h; sourceTree = SOURCE_ROOT; };
+		A4D592811CF5869300298360 /* JKDragAndDropCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKDragAndDropCollectionViewLayout.m; path = JKTimi/JKDragAndDropCollectionViewLayout.m; sourceTree = SOURCE_ROOT; };
+		A4D592821CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKDragAndDropCollectionViewLayoutViewController.h; path = JKTimi/JKDragAndDropCollectionViewLayoutViewController.h; sourceTree = SOURCE_ROOT; };
+		A4D592831CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKDragAndDropCollectionViewLayoutViewController.m; path = JKTimi/JKDragAndDropCollectionViewLayoutViewController.m; sourceTree = SOURCE_ROOT; };
+		A4D592841CF5869300298360 /* JKDraggableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKDraggableCollectionViewCell.h; path = JKTimi/JKDraggableCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		A4D592851CF5869300298360 /* JKDraggableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKDraggableCollectionViewCell.m; path = JKTimi/JKDraggableCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		A4D5928A1CF5888100298360 /* JKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCollectionViewController.h; sourceTree = "<group>"; };
+		A4D5928B1CF5888100298360 /* JKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCollectionViewController.m; sourceTree = "<group>"; };
+		A4D882EC1CE3720C00D52641 /* 充值.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值.png"; sourceTree = "<group>"; };
+		A4D882ED1CE3720C00D52641 /* 工资.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "工资.png"; sourceTree = "<group>"; };
+		A4D882EE1CE3720C00D52641 /* 购物.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物.png"; sourceTree = "<group>"; };
+		A4D882EF1CE3720C00D52641 /* 护肤.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "护肤.png"; sourceTree = "<group>"; };
+		A4D882F01CE3720C00D52641 /* 就餐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "就餐.png"; sourceTree = "<group>"; };
+		A4D882F11CE3720D00D52641 /* 丽人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "丽人.png"; sourceTree = "<group>"; };
+		A4D882F21CE3720D00D52641 /* 零食.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "零食.png"; sourceTree = "<group>"; };
+		A4D882F31CE3720D00D52641 /* 日杂.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日杂.png"; sourceTree = "<group>"; };
+		A4D882F41CE3720D00D52641 /* 鞋帽.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鞋帽.png"; sourceTree = "<group>"; };
+		A4D882F51CE3720D00D52641 /* 一般.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "一般.png"; sourceTree = "<group>"; };
+		A4D882F61CE3720D00D52641 /* 娱乐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "娱乐.png"; sourceTree = "<group>"; };
+		A4D882F71CE3720D00D52641 /* 住房.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "住房.png"; sourceTree = "<group>"; };
+		A4D883041CE37AE200D52641 /* 宝贝.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝贝.png"; sourceTree = "<group>"; };
+		A4D883051CE37AE200D52641 /* 宠物.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宠物.png"; sourceTree = "<group>"; };
+		A4D883061CE37AE200D52641 /* 服装.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服装.png"; sourceTree = "<group>"; };
+		A4D883071CE37AE200D52641 /* 腐败.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "腐败.png"; sourceTree = "<group>"; };
+		A4D883081CE37AE200D52641 /* 工作.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "工作.png"; sourceTree = "<group>"; };
+		A4D883091CE37AE200D52641 /* 家庭.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家庭.png"; sourceTree = "<group>"; };
+		A4D8830A1CE37AE200D52641 /* 酒水.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "酒水.png"; sourceTree = "<group>"; };
+		A4D8830B1CE37AE200D52641 /* 日用品.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日用品.png"; sourceTree = "<group>"; };
+		A4D8830C1CE37AE200D52641 /* 数码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数码.png"; sourceTree = "<group>"; };
+		A4D8830D1CE37AE200D52641 /* 投资.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "投资.png"; sourceTree = "<group>"; };
+		A4D8830E1CE37AE200D52641 /* 香烟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "香烟.png"; sourceTree = "<group>"; };
+		A4D8830F1CE37AE200D52641 /* 信用卡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "信用卡.png"; sourceTree = "<group>"; };
+		A4D883101CE37AE200D52641 /* 学习.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学习.png"; sourceTree = "<group>"; };
+		A4D883111CE37AE200D52641 /* 医疗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "医疗.png"; sourceTree = "<group>"; };
+		A4D883121CE37AE200D52641 /* 运动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动.png"; sourceTree = "<group>"; };
+		A4D883131CE37AE200D52641 /* 转账.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转账.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42414311CE19E0700B71968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A41D0D1A1CE4D95E003786AE /* JKTimiView */ = {
+			isa = PBXGroup;
+			children = (
+				A487FDF91CF0B10800A1BF5F /* JKCollectionView */,
+				A424145C1CE1A03500B71968 /* JKTimiView */,
+			);
+			name = JKTimiView;
+			sourceTree = "<group>";
+		};
+		A41D0D1B1CE4D977003786AE /* JKTimeLineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A424143D1CE19E0700B71968 /* JKTimeLineVC.h */,
+				A424143E1CE19E0700B71968 /* JKTimeLineVC.m */,
+			);
+			name = JKTimeLineViewController;
+			sourceTree = "<group>";
+		};
+		A41D0D1C1CE4D9AA003786AE /* JKTimiApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A424143A1CE19E0700B71968 /* AppDelegate.h */,
+				A424143B1CE19E0700B71968 /* AppDelegate.m */,
+			);
+			name = JKTimiApplication;
+			sourceTree = "<group>";
+		};
+		A424142B1CE19E0700B71968 = {
+			isa = PBXGroup;
+			children = (
+				A42414361CE19E0700B71968 /* JKTimi */,
+				A42414351CE19E0700B71968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A42414351CE19E0700B71968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42414341CE19E0700B71968 /* JKTimi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42414361CE19E0700B71968 /* JKTimi */ = {
+			isa = PBXGroup;
+			children = (
+				A41D0D1C1CE4D9AA003786AE /* JKTimiApplication */,
+				A48DB5C21CF494020093DCF1 /* JKAnimations */,
+				A487FDFD1CF0B12600A1BF5F /* JKTimiTool */,
+				A42414571CE19E5D00B71968 /* JKTimiCoreDataModel */,
+				A41D0D1A1CE4D95E003786AE /* JKTimiView */,
+				A42414601CE1B41100B71968 /* JKTimiControllers */,
+				A4D882D11CE360AC00D52641 /* JKTimiImages */,
+				A42414371CE19E0700B71968 /* Supporting Files */,
+			);
+			path = JKTimi;
+			sourceTree = "<group>";
+		};
+		A42414371CE19E0700B71968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A424145D1CE1A12F00B71968 /* PrefixHeader.pch */,
+				A42414461CE19E0700B71968 /* Assets.xcassets */,
+				A42414481CE19E0700B71968 /* LaunchScreen.storyboard */,
+				A424144B1CE19E0700B71968 /* Info.plist */,
+				A42414381CE19E0700B71968 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A42414571CE19E5D00B71968 /* JKTimiCoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A42414431CE19E0700B71968 /* JKTimi.xcdatamodeld */,
+				A42BCBF21D07BC9E0089B1CE /* Account+CoreDataProperties.h */,
+				A42BCBF31D07BC9E0089B1CE /* Account+CoreDataProperties.m */,
+				A42414531CE19E5300B71968 /* Account.h */,
+				A42414541CE19E5300B71968 /* Account.m */,
+				A42414611CE1B48000B71968 /* JKAccount.h */,
+				A42414621CE1B48000B71968 /* JKAccount.m */,
+				A42414641CE1B52300B71968 /* JKAccountModel.h */,
+				A42414651CE1B52300B71968 /* JKAccountModel.m */,
+				A42414671CE1B9E600B71968 /* JKModelManager.h */,
+				A42414681CE1B9E600B71968 /* JKModelManager.m */,
+			);
+			name = JKTimiCoreDataModel;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A424145C1CE1A03500B71968 /* JKTimiView */ = {
+			isa = PBXGroup;
+			children = (
+				A42414581CE19F1C00B71968 /* JKTimeLineView.h */,
+				A42414591CE19F1C00B71968 /* JKTimeLineView.m */,
+			);
+			name = JKTimiView;
+			sourceTree = "<group>";
+		};
+		A42414601CE1B41100B71968 /* JKTimiControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A44686631D07115A0078F111 /* JKRegisterAndLoginControllers */,
+				A487FE0C1CF0B15600A1BF5F /* JKNumberKeyboardViewController */,
+				A41D0D1B1CE4D977003786AE /* JKTimeLineViewController */,
+				A487FE0F1CF0B2CA00A1BF5F /* JKCollectionViewController */,
+			);
+			name = JKTimiControllers;
+			sourceTree = "<group>";
+		};
+		A44686261D065E000078F111 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A44686271D065E000078F111 /* SVIndefiniteAnimatedView.h */,
+				A44686281D065E000078F111 /* SVIndefiniteAnimatedView.m */,
+				A44686291D065E000078F111 /* SVProgressHUD-Prefix.pch */,
+				A446862A1D065E000078F111 /* SVProgressHUD.bundle */,
+				A446862B1D065E000078F111 /* SVProgressHUD.h */,
+				A446862C1D065E000078F111 /* SVProgressHUD.m */,
+				A446862D1D065E000078F111 /* SVRadialGradientLayer.h */,
+				A446862E1D065E000078F111 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		A44686631D07115A0078F111 /* JKRegisterAndLoginControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A44686231D065DB60078F111 /* JKRegisterViewController.h */,
+				A44686241D065DB60078F111 /* JKRegisterViewController.m */,
+				A44686201D065D7C0078F111 /* JKLoginViewController.h */,
+				A44686211D065D7C0078F111 /* JKLoginViewController.m */,
+			);
+			name = JKRegisterAndLoginControllers;
+			sourceTree = "<group>";
+		};
+		A487FDF91CF0B10800A1BF5F /* JKCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A487FE051CF0B13F00A1BF5F /* JKCollectionViewLayout */,
+				A4D5927E1CF5869300298360 /* JKCollectionViewCell.h */,
+				A4D5927F1CF5869300298360 /* JKCollectionViewCell.m */,
+			);
+			name = JKCollectionView;
+			path = ../../test2/test;
+			sourceTree = "<group>";
+		};
+		A487FDFD1CF0B12600A1BF5F /* JKTimiTool */ = {
+			isa = PBXGroup;
+			children = (
+				A44686261D065E000078F111 /* SVProgressHUD */,
+				A48DB5BD1CF493E70093DCF1 /* UIView+FrameChange.h */,
+				A48DB5BC1CF493E70093DCF1 /* UIView+ FrameChange.m */,
+				A48DB5BE1CF493E70093DCF1 /* UIView+anchorPoint.h */,
+				A48DB5BF1CF493E70093DCF1 /* UIView+anchorPoint.m */,
+				A43AA01A1CF6CC8E00F53C29 /* JKInteractiveTransition.h */,
+				A43AA01B1CF6CC8E00F53C29 /* JKInteractiveTransition.m */,
+			);
+			name = JKTimiTool;
+			sourceTree = "<group>";
+		};
+		A487FE051CF0B13F00A1BF5F /* JKCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A4AF98E51CF5AA9400319982 /* JKDragAndDropCollectionViewLayoutConstants.h */,
+				A4D592801CF5869300298360 /* JKDragAndDropCollectionViewLayout.h */,
+				A4D592811CF5869300298360 /* JKDragAndDropCollectionViewLayout.m */,
+				A4D592821CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.h */,
+				A4D592831CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.m */,
+				A4D592841CF5869300298360 /* JKDraggableCollectionViewCell.h */,
+				A4D592851CF5869300298360 /* JKDraggableCollectionViewCell.m */,
+			);
+			name = JKCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		A487FE0C1CF0B15600A1BF5F /* JKNumberKeyboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AF98E61CF5AA9400319982 /* JKNumberKeyboardViewController.h */,
+				A4AF98E71CF5AA9400319982 /* JKNumberKeyboardViewController.m */,
+				A4AF98E81CF5AA9400319982 /* JKNumberKeyboardViewController.xib */,
+			);
+			name = JKNumberKeyboardViewController;
+			path = ../../test2/test;
+			sourceTree = "<group>";
+		};
+		A487FE0F1CF0B2CA00A1BF5F /* JKCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4D5928A1CF5888100298360 /* JKCollectionViewController.h */,
+				A4D5928B1CF5888100298360 /* JKCollectionViewController.m */,
+			);
+			name = JKCollectionViewController;
+			sourceTree = "<group>";
+		};
+		A48DB5C21CF494020093DCF1 /* JKAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				A4D5927B1CF5853E00298360 /* JKParabolaAnimation.h */,
+				A4D5927C1CF5853E00298360 /* JKParabolaAnimation.m */,
+				A48DB5B91CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.h */,
+				A48DB5BA1CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.m */,
+			);
+			name = JKAnimations;
+			sourceTree = "<group>";
+		};
+		A4D882D11CE360AC00D52641 /* JKTimiImages */ = {
+			isa = PBXGroup;
+			children = (
+				A424145E1CE1A7A000B71968 /* addAmountButton.png */,
+				A4D883041CE37AE200D52641 /* 宝贝.png */,
+				A4D883051CE37AE200D52641 /* 宠物.png */,
+				A4D883061CE37AE200D52641 /* 服装.png */,
+				A41C2F1F1CF1D26A00EE0893 /* 删除.png */,
+				A41C2F211CF1D27B00EE0893 /* 编辑.png */,
+				A4D883071CE37AE200D52641 /* 腐败.png */,
+				A4D883081CE37AE200D52641 /* 工作.png */,
+				A4D883091CE37AE200D52641 /* 家庭.png */,
+				A4D8830A1CE37AE200D52641 /* 酒水.png */,
+				A4D8830B1CE37AE200D52641 /* 日用品.png */,
+				A4D8830C1CE37AE200D52641 /* 数码.png */,
+				A4D8830D1CE37AE200D52641 /* 投资.png */,
+				A4D8830E1CE37AE200D52641 /* 香烟.png */,
+				A4D8830F1CE37AE200D52641 /* 信用卡.png */,
+				A4D883101CE37AE200D52641 /* 学习.png */,
+				A4D883111CE37AE200D52641 /* 医疗.png */,
+				A4D883121CE37AE200D52641 /* 运动.png */,
+				A4D883131CE37AE200D52641 /* 转账.png */,
+				A4D882EC1CE3720C00D52641 /* 充值.png */,
+				A4D882ED1CE3720C00D52641 /* 工资.png */,
+				A4D882EE1CE3720C00D52641 /* 购物.png */,
+				A4D882EF1CE3720C00D52641 /* 护肤.png */,
+				A4D882F01CE3720C00D52641 /* 就餐.png */,
+				A4D882F11CE3720D00D52641 /* 丽人.png */,
+				A4D882F21CE3720D00D52641 /* 零食.png */,
+				A4D882F31CE3720D00D52641 /* 日杂.png */,
+				A4D882F41CE3720D00D52641 /* 鞋帽.png */,
+				A4D882F51CE3720D00D52641 /* 一般.png */,
+				A4D882F61CE3720D00D52641 /* 娱乐.png */,
+				A4D882F71CE3720D00D52641 /* 住房.png */,
+			);
+			name = JKTimiImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42414331CE19E0700B71968 /* JKTimi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A424144E1CE19E0700B71968 /* Build configuration list for PBXNativeTarget "JKTimi" */;
+			buildPhases = (
+				A42414301CE19E0700B71968 /* Sources */,
+				A42414311CE19E0700B71968 /* Frameworks */,
+				A42414321CE19E0700B71968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKTimi;
+			productName = JKTimi;
+			productReference = A42414341CE19E0700B71968 /* JKTimi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A424142C1CE19E0700B71968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = sky;
+				TargetAttributes = {
+					A42414331CE19E0700B71968 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SCQ86T8B64;
+					};
+				};
+			};
+			buildConfigurationList = A424142F1CE19E0700B71968 /* Build configuration list for PBXProject "JKTimi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A424142B1CE19E0700B71968;
+			productRefGroup = A42414351CE19E0700B71968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42414331CE19E0700B71968 /* JKTimi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42414321CE19E0700B71968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44686301D065E000078F111 /* SVProgressHUD.bundle in Resources */,
+				A4D8831F1CE37AE200D52641 /* 信用卡.png in Resources */,
+				A4D8831D1CE37AE200D52641 /* 投资.png in Resources */,
+				A4D8831B1CE37AE200D52641 /* 日用品.png in Resources */,
+				A4D883001CE3720D00D52641 /* 鞋帽.png in Resources */,
+				A4D882FD1CE3720D00D52641 /* 丽人.png in Resources */,
+				A4D883151CE37AE200D52641 /* 宠物.png in Resources */,
+				A4D882FC1CE3720D00D52641 /* 就餐.png in Resources */,
+				A41C2F201CF1D26A00EE0893 /* 删除.png in Resources */,
+				A4D882F81CE3720D00D52641 /* 充值.png in Resources */,
+				A4AF98EA1CF5AA9400319982 /* JKNumberKeyboardViewController.xib in Resources */,
+				A4D882FB1CE3720D00D52641 /* 护肤.png in Resources */,
+				A4D883161CE37AE200D52641 /* 服装.png in Resources */,
+				A4D882FF1CE3720D00D52641 /* 日杂.png in Resources */,
+				A4D883231CE37AE200D52641 /* 转账.png in Resources */,
+				A4D882FA1CE3720D00D52641 /* 购物.png in Resources */,
+				A4D883181CE37AE200D52641 /* 工作.png in Resources */,
+				A4D883031CE3720D00D52641 /* 住房.png in Resources */,
+				A4D883171CE37AE200D52641 /* 腐败.png in Resources */,
+				A424144A1CE19E0700B71968 /* LaunchScreen.storyboard in Resources */,
+				A4D8831A1CE37AE200D52641 /* 酒水.png in Resources */,
+				A42414471CE19E0700B71968 /* Assets.xcassets in Resources */,
+				A4D883021CE3720D00D52641 /* 娱乐.png in Resources */,
+				A4D883201CE37AE200D52641 /* 学习.png in Resources */,
+				A4D8831E1CE37AE200D52641 /* 香烟.png in Resources */,
+				A41C2F221CF1D27B00EE0893 /* 编辑.png in Resources */,
+				A4D882FE1CE3720D00D52641 /* 零食.png in Resources */,
+				A4D882F91CE3720D00D52641 /* 工资.png in Resources */,
+				A4D8831C1CE37AE200D52641 /* 数码.png in Resources */,
+				A4D883221CE37AE200D52641 /* 运动.png in Resources */,
+				A4D883211CE37AE200D52641 /* 医疗.png in Resources */,
+				A4D883191CE37AE200D52641 /* 家庭.png in Resources */,
+				A424145F1CE1A7A000B71968 /* addAmountButton.png in Resources */,
+				A4D883011CE3720D00D52641 /* 一般.png in Resources */,
+				A4D883141CE37AE200D52641 /* 宝贝.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42414301CE19E0700B71968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D592871CF5869300298360 /* JKDragAndDropCollectionViewLayout.m in Sources */,
+				A42414691CE1B9E600B71968 /* JKModelManager.m in Sources */,
+				A42414631CE1B48000B71968 /* JKAccount.m in Sources */,
+				A424143F1CE19E0700B71968 /* JKTimeLineVC.m in Sources */,
+				A44686251D065DB60078F111 /* JKRegisterViewController.m in Sources */,
+				A4D592891CF5869300298360 /* JKDraggableCollectionViewCell.m in Sources */,
+				A42BCBF41D07BC9E0089B1CE /* Account+CoreDataProperties.m in Sources */,
+				A4D592861CF5869300298360 /* JKCollectionViewCell.m in Sources */,
+				A43AA01C1CF6CC8E00F53C29 /* JKInteractiveTransition.m in Sources */,
+				A44686321D065E000078F111 /* SVRadialGradientLayer.m in Sources */,
+				A4D5927D1CF5853E00298360 /* JKParabolaAnimation.m in Sources */,
+				A4D592881CF5869300298360 /* JKDragAndDropCollectionViewLayoutViewController.m in Sources */,
+				A446862F1D065E000078F111 /* SVIndefiniteAnimatedView.m in Sources */,
+				A44686311D065E000078F111 /* SVProgressHUD.m in Sources */,
+				A4AF98E91CF5AA9400319982 /* JKNumberKeyboardViewController.m in Sources */,
+				A424143C1CE19E0700B71968 /* AppDelegate.m in Sources */,
+				A42414561CE19E5300B71968 /* Account.m in Sources */,
+				A44686221D065D7C0078F111 /* JKLoginViewController.m in Sources */,
+				A48DB5C11CF493E70093DCF1 /* UIView+anchorPoint.m in Sources */,
+				A424145A1CE19F1C00B71968 /* JKTimeLineView.m in Sources */,
+				A42414391CE19E0700B71968 /* main.m in Sources */,
+				A48DB5BB1CF48EBE0093DCF1 /* JKPushAndPopAnimationTransition.m in Sources */,
+				A42414451CE19E0700B71968 /* JKTimi.xcdatamodeld in Sources */,
+				A4D592901CF5888100298360 /* JKCollectionViewController.m in Sources */,
+				A48DB5C01CF493E70093DCF1 /* UIView+ FrameChange.m in Sources */,
+				A42414661CE1B52300B71968 /* JKAccountModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A42414481CE19E0700B71968 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42414491CE19E0700B71968 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A424144C1CE19E0700B71968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A424144D1CE19E0700B71968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A424144F1CE19E0700B71968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKTimi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.JKTimi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A42414501CE19E0700B71968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKTimi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.JKTimi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A424142F1CE19E0700B71968 /* Build configuration list for PBXProject "JKTimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424144C1CE19E0700B71968 /* Debug */,
+				A424144D1CE19E0700B71968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A424144E1CE19E0700B71968 /* Build configuration list for PBXNativeTarget "JKTimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424144F1CE19E0700B71968 /* Debug */,
+				A42414501CE19E0700B71968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A42414431CE19E0700B71968 /* JKTimi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A42414441CE19E0700B71968 /* JKTimi.xcdatamodel */,
+			);
+			currentVersion = A42414441CE19E0700B71968 /* JKTimi.xcdatamodel */;
+			name = JKTimi.xcdatamodeld;
+			path = JKTimi/JKTimi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A424142C1CE19E0700B71968 /* Project object */;
+}
